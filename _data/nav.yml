@@ -2,7 +2,5 @@
   url: /
 - name: Schedule
   url: /schedule/
-- name: Experiments
-  url: /experiments/
 - name: Resources
   url: /resources/

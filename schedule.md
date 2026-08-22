@@ -6,8 +6,6 @@ eyebrow: Semester plan
 lede: One experiment per session across sixteen weeks, with cycle reviews and internals in between. Dates are confirmed against the academic calendar as the semester progresses.
 ---
 
-{% assign exps = site.experiments | sort: "number" %}
-
 <div class="table-scroll" markdown="0">
 <table>
   <thead>
@@ -15,7 +13,6 @@ lede: One experiment per session across sixteen weeks, with cycle reviews and in
       <th class="t-num">Week</th>
       <th>Date</th>
       <th>Session</th>
-      <th>Experiment</th>
     </tr>
   </thead>
   <tbody>
@@ -24,17 +21,6 @@ lede: One experiment per session across sixteen weeks, with cycle reviews and in
       <td class="t-mono">{{ w.week }}</td>
       <td class="t-mono">{% if w.date and w.date != "" %}{{ w.date }}{% else %}—{% endif %}</td>
       <td class="t-title">{{ w.session }}</td>
-      <td>
-        {% if w.exp and w.exp != "" %}
-          {% for e in exps %}
-            {% if e.number == w.exp %}
-              <a href="{{ e.url | relative_url }}"><span class="chip chip--{{ e.cycle_id }}">{{ e.number | prepend: '0' | slice: -2, 2 }}</span></a>
-            {% endif %}
-          {% endfor %}
-        {% else %}
-          <span class="t-mono">—</span>
-        {% endif %}
-      </td>
     </tr>
   {% endfor %}
   </tbody>

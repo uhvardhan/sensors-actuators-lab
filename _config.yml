@@ -19,19 +19,6 @@ institute:
   department: "Department of Computer Science and Engineering (Robotics & Artificial Intelligence)"
   address: "Bachupally, Hyderabad, Telangana — 500090"
 
-# ─── Collections ──────────────────────────────────────────────────────────────
-collections:
-  experiments:
-    output: true
-    permalink: /experiments/:name/
-
-defaults:
-  - scope:
-      path: ""
-      type: "experiments"
-    values:
-      layout: "experiment"
-
 # ─── Build ────────────────────────────────────────────────────────────────────
 markdown: kramdown
 kramdown:
