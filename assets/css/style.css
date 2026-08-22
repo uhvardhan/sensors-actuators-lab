@@ -286,19 +286,7 @@ h3 { font-size: 1.05rem; margin: 1.9rem 0 .6rem; }
 /* The panel carries its own top padding, so the page need not stack its own on top. */
 .main:has(> .section--notice:first-child) { padding-top: 1.25rem; }
 
-/* Set in the display face at heading size, so Updates reads louder than the
-   quiet mono labels used for every other section. */
-.section--notice .section__title {
-  font-family: var(--font-disp);
-  font-size: 1.4rem;
-  font-weight: 700;
-  letter-spacing: -.005em;
-  text-transform: none;
-  color: var(--ink);
-  padding-bottom: .5rem;
-  border-bottom-color: var(--notice-rule);
-  margin-bottom: 1.1rem;
-}
+.section--notice .section__title { border-bottom-color: var(--notice-rule); }
 .section--notice .update { border-bottom-color: var(--notice-rule); }
 .section--notice .update:last-child { padding-bottom: 0; }
 .section--notice .update__body { color: var(--ink); }
@@ -313,6 +301,20 @@ h3 { font-size: 1.05rem; margin: 1.9rem 0 .6rem; }
   padding-bottom: .55rem;
   border-bottom: 1px solid var(--rule);
   margin: 0 0 1.4rem;
+}
+
+/* Loud variant — the display face at heading size, for the sections that should
+   carry the page now that the hero is gone. Must follow .section__title: equal
+   specificity, so source order is what lets it win. */
+.section__title--lead {
+  font-family: var(--font-disp);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -.005em;
+  text-transform: none;
+  color: var(--ink);
+  padding-bottom: .5rem;
+  margin-bottom: 1.1rem;
 }
 
 /* ── Updates ──────────────────────────────────────────────────────────────── */
