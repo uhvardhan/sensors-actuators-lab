@@ -2,7 +2,6 @@
 layout: page
 title: Schedule
 permalink: /schedule/
-eyebrow: Semester plan
 hide_title: true
 ---
 
