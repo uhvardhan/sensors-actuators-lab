@@ -76,12 +76,12 @@ instructors:
     role: ""
     url: ""
     email: ""
-    photo: ""
+    photo: "/assets/images/avatar-aak.svg"   # initials placeholder — swap for a photo
   - name: "Harshvardhan Uppaluru"
     role: ""
     url: "https://uhvardhan.github.io"
     email: ""
-    photo: ""
+    photo: "/assets/images/harshvardhan-uppaluru.jpg"
 
 teaching_assistants: []
 

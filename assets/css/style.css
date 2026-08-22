@@ -541,10 +541,27 @@ tbody tr:hover td { background: rgba(22, 35, 42, .022); }
 
 /* ── People ───────────────────────────────────────────────────────────────── */
 
-.people { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.25rem; }
-.person { display: flex; gap: 1rem; align-items: center; }
-.person__photo { width: 60px; height: 60px; object-fit: cover; border-radius: 50%; }
-.person__name { margin: 0; font-family: var(--font-disp); font-weight: 600; font-size: 1.08rem; }
+/* Portrait tiles in a row: photo above, name under it. Each tile sizes to its
+   own name — a fixed width would wrap the long ones and strand the short. */
+.people {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+}
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: .75rem;
+  min-width: 120px;
+  max-width: 12rem;
+}
+.person__photo { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; }
+.person__name { margin: 0; font-family: var(--font-disp); font-weight: 600; font-size: 1.02rem; }
 .person__role { margin: .1rem 0 0; font-size: .85rem; color: var(--ink-3); }
 
 /* ── Callout ──────────────────────────────────────────────────────────────── */
@@ -603,6 +620,10 @@ tbody tr:hover td { background: rgba(22, 35, 42, .022); }
   .masthead__inner { gap: .85rem; }
   .masthead__mark img { width: 50px; height: auto; }
   .update { grid-template-columns: 1fr; gap: .3rem; }
+  /* Shrink the tiles rather than let them wrap — two still fit a phone. */
+  .people { gap: 1.25rem 1rem; }
+  .person { max-width: 9.5rem; gap: .6rem; }
+  .person__photo { width: 96px; height: 96px; }
   .specs__row { grid-template-columns: 1fr; gap: .15rem; }
   .footer__inner { grid-template-columns: 1fr; gap: 1.5rem; }
   .pager { flex-direction: column; gap: 1.25rem; }
