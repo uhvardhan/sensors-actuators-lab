@@ -1,0 +1,113 @@
+---
+layout: default
+---
+{%- assign c = site.data.course -%}
+
+<div class="hero">
+  <p class="eyebrow">{{ c.programme }}</p>
+  <h1>{{ c.title }}</h1>
+  <p class="hero__sub">
+    <span class="code">{{ c.code }}</span> · {{ c.semester }} · {{ c.regulation }} regulation · {{ c.academic_year }}
+  </p>
+  <p class="hero__blurb">
+    Twelve experiments in two cycles. The first eight ask what a robot can know about
+    itself and the world — encoders, IMUs, ranging, cameras, depth, LiDAR. The last
+    four ask what it can do about it — DC, stepper and brushless motors, closed under
+    vision feedback in the final experiment.
+  </p>
+
+  <div class="cycle-cards">
+    <a class="cycle-card cycle-card--sense" href="{{ '/experiments/#cycle-i' | relative_url }}">
+      <span class="cycle-card__label">Cycle I</span>
+      <span class="cycle-card__name">Sensors &amp; Perception</span>
+      <span class="cycle-card__count">Experiments 01–08</span>
+    </a>
+    <a class="cycle-card cycle-card--act" href="{{ '/experiments/#cycle-ii' | relative_url }}">
+      <span class="cycle-card__label">Cycle II</span>
+      <span class="cycle-card__name">Actuators &amp; Control</span>
+      <span class="cycle-card__count">Experiments 09–12</span>
+    </a>
+  </div>
+</div>
+
+<section class="section">
+  <h2 class="section__title">Updates</h2>
+  <ol class="updates">
+    {%- for u in site.data.updates -%}
+    <li class="update">
+      <p class="update__date">{{ u.date }}</p>
+      {%- capture hrefbase %}href="{{ site.baseurl }}/{% endcapture -%}
+      <div class="update__body">{{ u.body | markdownify | replace: 'href="/', hrefbase }}</div>
+    </li>
+    {%- endfor -%}
+  </ol>
+</section>
+
+<section class="section">
+  <h2 class="section__title">About this lab</h2>
+  <div class="prose">
+    {{ content }}
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section__title">Where and when</h2>
+  <dl class="specs">
+    <div class="specs__row">
+      <dt>Sessions</dt>
+      <dd>
+        <ul class="bare">
+          {%- for t in c.timings -%}<li>{{ t }}</li>{%- endfor -%}
+        </ul>
+      </dd>
+    </div>
+    <div class="specs__row">
+      <dt>Venue</dt>
+      <dd>{{ c.venue }}</dd>
+    </div>
+    <div class="specs__row">
+      <dt>Scheme</dt>
+      <dd>{{ c.teaching_scheme.lecture }} L · {{ c.teaching_scheme.practical }} P · {{ c.teaching_scheme.credits }} credit</dd>
+    </div>
+    <div class="specs__row">
+      <dt>Prerequisite</dt>
+      <dd>{{ c.prerequisites }}</dd>
+    </div>
+  </dl>
+</section>
+
+<section class="section">
+  <h2 class="section__title">Instructor</h2>
+  <ul class="people">
+    {%- for p in c.instructors -%}
+    <li class="person">
+      {%- if p.photo and p.photo != "" -%}
+      <img class="person__photo" src="{{ p.photo | relative_url }}" alt="{{ p.name }}">
+      {%- endif -%}
+      <div>
+        <p class="person__name">
+          {%- if p.url and p.url != "" -%}<a href="{{ p.url }}">{{ p.name }}</a>{%- else -%}{{ p.name }}{%- endif -%}
+        </p>
+        <p class="person__role">{{ p.role }}</p>
+        {%- if p.email and p.email != "" -%}
+        <p class="person__role"><a href="mailto:{{ p.email }}">{{ p.email }}</a></p>
+        {%- endif -%}
+      </div>
+    </li>
+    {%- endfor -%}
+  </ul>
+
+  {%- if c.teaching_assistants.size > 0 -%}
+  <h2 class="section__title">Teaching assistants</h2>
+  <ul class="people">
+    {%- for p in c.teaching_assistants -%}
+    <li class="person">
+      <div>
+        <p class="person__name">{{ p.name }}</p>
+        <p class="person__role">{{ p.role }}</p>
+      </div>
+    </li>
+    {%- endfor -%}
+  </ul>
+  {%- endif -%}
+</section>

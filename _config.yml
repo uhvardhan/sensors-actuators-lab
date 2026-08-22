@@ -1,0 +1,46 @@
+# ─── Site identity ────────────────────────────────────────────────────────────
+title: "Sensors and Actuators Laboratory"
+tagline: "III Semester 2026–27"
+description: >-
+  Course website for Sensors and Actuators Laboratory (25PC2RA202),
+  B.Tech. CSE (Robotics & Artificial Intelligence), VNR VJIET.
+
+# EDIT if you name the repository something other than sensors-actuators-lab.
+url: "https://uhvardhan.github.io"
+baseurl: "/sensors-actuators-lab"
+
+# ─── Institute block (masthead + footer) ──────────────────────────────────────
+institute:
+  name: "VNR Vignana Jyothi Institute of Engineering and Technology"
+  short: "VNR VJIET"
+  url: "https://www.vnrvjiet.ac.in"
+  # Replace with the real institute logo, e.g. /assets/images/vnrvjiet.png
+  logo: "/assets/images/logo-placeholder.svg"
+  department: "Department of Computer Science and Engineering (Robotics & Artificial Intelligence)"
+  address: "Bachupally, Hyderabad, Telangana — 500090"
+
+# ─── Collections ──────────────────────────────────────────────────────────────
+collections:
+  experiments:
+    output: true
+    permalink: /experiments/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "experiments"
+    values:
+      layout: "experiment"
+
+# ─── Build ────────────────────────────────────────────────────────────────────
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .jekyll-cache

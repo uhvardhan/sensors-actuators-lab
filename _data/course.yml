@@ -1,0 +1,110 @@
+# Everything the site says about the course lives here. Edit this file, not the pages.
+
+code: "25PC2RA202"
+title: "Sensors and Actuators Laboratory"
+programme: "B.Tech. — Computer Science and Engineering (Robotics & Artificial Intelligence)"
+semester: "III Semester"
+regulation: "R25"
+academic_year: "2026–27"
+
+# NOTE: the R25 curriculum table lists this lab as 25PC2RA202, while the detailed
+# syllabus page is headed 25PC2RA203 (a code it shares with the Software Systems
+# lab). Confirm with the department and correct `code` above if needed.
+
+teaching_scheme:
+  lecture: 0
+  practical: 2
+  credits: 1
+
+# Timetable slot — fill in once the timetable is published.
+timings:
+  - "Batch A — day / time TBA"
+  - "Batch B — day / time TBA"
+venue: "Robotics & AI Laboratory, TBA"
+
+evaluation:
+  - key: "D-D"
+    label: "Day-to-day evaluation"
+    marks: 10
+  - key: "PE"
+    label: "Practical examination (internal)"
+    marks: 10
+  - key: "LR"
+    label: "Laboratory record"
+    marks: 10
+  - key: "CP"
+    label: "Course project"
+    marks: 10
+  - key: "SEE"
+    label: "Semester end examination"
+    marks: 60
+
+prerequisites: "Basic Electrical and Electronics Engineering. Working knowledge of Python is assumed."
+
+objectives:
+  - "Process proprioceptive and exteroceptive sensor data and analyse sensor properties."
+  - "Analyse the hardware differences between rolling and global shutter camera systems."
+  - "Implement computer vision algorithms for object tracking and depth estimation."
+  - "Control electric actuators (DC, stepper, BLDC) and implement a closed-loop perception–action system."
+
+outcomes:
+  - id: "CO-1"
+    text: "Characterize sensor noise and drift in IMUs and calibrate encoders for odometry."
+  - id: "CO-2"
+    text: "Deploy vision hardware configurations to mitigate motion artifacts using global shutter technology."
+  - id: "CO-3"
+    text: "Utilize LiDAR and depth cameras to generate environmental maps and distance data."
+  - id: "CO-4"
+    text: "Design an integrated robotic system that uses vision-based feedback to control servo actuated mechanisms."
+
+# Correlation levels: 1 = Slight, 2 = Moderate, 3 = Substantial. "" = not mapped.
+articulation:
+  columns: ["PO-1","PO-2","PO-3","PO-4","PO-5","PO-6","PO-7","PO-8","PO-9","PO-10","PO-11","PSO-1","PSO-2","PSO-3"]
+  rows:
+    - id: "CO-1"
+      values: ["3","3","","3","2","","","","","","2","2","1",""]
+    - id: "CO-2"
+      values: ["3","2","2","","3","","","","","","2","3","2","2"]
+    - id: "CO-3"
+      values: ["3","3","2","3","3","1","","","","","3","3","3","2"]
+    - id: "CO-4"
+      values: ["3","3","3","2","3","2","1","2","2","2","3","3","3","3"]
+
+instructors:
+  - name: "Harshvardhan Uppaluru"
+    role: "Course instructor"
+    url: "https://uhvardhan.github.io"
+    email: ""
+    photo: ""
+
+teaching_assistants: []
+
+textbooks:
+  - author: "Clarence W. de Silva"
+    title: "Sensors and Actuators: Engineering System Instrumentation"
+    publisher: "CRC Press"
+    note: "Primary reference for Units I, III, IV, V of the theory course."
+  - author: "Richard Szeliski"
+    title: "Computer Vision: Algorithms and Applications"
+    publisher: "Springer"
+    note: "Vision experiments — calibration, tracking, depth."
+
+references:
+  - author: "Roland Siegwart, Illah Nourbakhsh, Davide Scaramuzza"
+    title: "Introduction to Autonomous Mobile Robots"
+    publisher: "MIT Press, 2nd edition"
+    note: "Odometry, ranging, LiDAR."
+  - author: "Saeed B. Niku"
+    title: "Introduction to Robotics: Analysis, Control, Applications"
+    publisher: "Wiley, 3rd edition"
+    note: "Actuators and transmission."
+
+online_resources:
+  - name: "NPTEL — Sensors and Actuators"
+    url: "https://onlinecourses.nptel.ac.in/noc25_ee76/preview"
+  - name: "NPTEL — Introduction to Mechatronics"
+    url: "https://onlinecourses.nptel.ac.in/noc24_me55/preview"
+  - name: "OpenCV — Camera calibration tutorial"
+    url: "https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html"
+  - name: "Open3D — Point cloud processing"
+    url: "https://www.open3d.org/docs/release/"

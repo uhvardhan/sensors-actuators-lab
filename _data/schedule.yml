@@ -1,0 +1,83 @@
+# Fill `date` from the academic calendar once it is published (e.g. "8 Sep").
+# Leave it as "" and the site prints an em dash instead.
+
+- week: 1
+  date: ""
+  session: "Lab orientation, safety briefing, toolchain setup"
+  exp: ""
+  cycle: ""
+- week: 2
+  date: ""
+  session: "Odometry and Kinematics"
+  exp: 1
+  cycle: sense
+- week: 3
+  date: ""
+  session: "Inertial Data Analysis"
+  exp: 2
+  cycle: sense
+- week: 4
+  date: ""
+  session: "Ranging and Error Characterization"
+  exp: 3
+  cycle: sense
+- week: 5
+  date: ""
+  session: "Shutter and Motion Artifacts"
+  exp: 4
+  cycle: sense
+- week: 6
+  date: ""
+  session: "Geometric Camera Calibration"
+  exp: 5
+  cycle: sense
+- week: 7
+  date: ""
+  session: "Object Detection and Tracking"
+  exp: 6
+  cycle: sense
+- week: 8
+  date: ""
+  session: "Volumetric Depth Interpretation"
+  exp: 7
+  cycle: sense
+- week: 9
+  date: ""
+  session: "Planar Environment Mapping"
+  exp: 8
+  cycle: sense
+- week: 10
+  date: ""
+  session: "Cycle I review · Lab internal I"
+  exp: ""
+  cycle: ""
+- week: 11
+  date: ""
+  session: "DC Motor Characterization"
+  exp: 9
+  cycle: act
+- week: 12
+  date: ""
+  session: "Stepper Motor Precision & Resonance"
+  exp: 10
+  cycle: act
+- week: 13
+  date: ""
+  session: "Brushless DC (BLDC) Speed Control"
+  exp: 11
+  cycle: act
+- week: 14
+  date: ""
+  session: "Integrated Visual Servoing"
+  exp: 12
+  cycle: act
+- week: 15
+  date: ""
+  session: "Lab internal II · record submission"
+  exp: ""
+  cycle: ""
+- week: 16
+  date: ""
+  session: "Semester end examination (practical)"
+  exp: ""
+  cycle: ""

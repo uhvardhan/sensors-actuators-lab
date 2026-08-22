@@ -1,0 +1,10 @@
+- name: Home
+  url: /
+- name: Overview
+  url: /overview/
+- name: Schedule
+  url: /schedule/
+- name: Experiments
+  url: /experiments/
+- name: Resources
+  url: /resources/

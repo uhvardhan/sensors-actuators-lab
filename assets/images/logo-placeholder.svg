@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="52" height="52" role="img" aria-label="Institute logo placeholder">
+  <rect width="52" height="52" rx="4" fill="#16232a"/>
+  <path d="M10 34 L18 18 L26 34" fill="none" stroke="#0e6e66" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M28 34 L34 18 L40 26" fill="none" stroke="#a8601a" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="10" y="39" width="32" height="2" rx="1" fill="#6f8087"/>
+</svg>
