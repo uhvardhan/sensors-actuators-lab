@@ -40,13 +40,11 @@ layout: default
     </div>
     <div class="specs__row">
       <dt>Scheme</dt>
-      <dd>
-        <ul class="bare">
-          <li>Lecture — {{ c.teaching_scheme.lecture }} hours per week</li>
-          <li>Practical — {{ c.teaching_scheme.practical }} hours per week</li>
-          <li>Credits — {{ c.teaching_scheme.credits }}</li>
-        </ul>
-      </dd>
+      <dd>Practical — {{ c.teaching_scheme.practical }} hours per week per student</dd>
+    </div>
+    <div class="specs__row">
+      <dt>Credits</dt>
+      <dd>{{ c.teaching_scheme.credits }}</dd>
     </div>
     <div class="specs__row">
       <dt>Prerequisites</dt>
