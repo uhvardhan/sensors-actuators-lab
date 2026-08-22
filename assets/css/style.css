@@ -490,6 +490,12 @@ tbody tr:hover td { background: rgba(22, 35, 42, .022); }
 
 .specs { margin: 1.75rem 0 0; }
 
+/* Straight after a lead heading, the heading's own rule already separates the
+   two — the spec list's top margin and first row border just read as an empty
+   row between two lines. */
+.section__title--lead + .specs { margin-top: 0; }
+.section__title--lead + .specs .specs__row:first-child { border-top: 0; }
+
 .specs__row {
   display: grid;
   grid-template-columns: 7.5rem 1fr;

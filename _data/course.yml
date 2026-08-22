@@ -16,11 +16,10 @@ teaching_scheme:
   practical: 2
   credits: 1
 
-# Timetable slot — fill in once the timetable is published.
 timings:
-  - "Batch A — day / time TBA"
-  - "Batch B — day / time TBA"
-venue: "Robotics & AI Laboratory, TBA"
+  - "Batch 1 — Mondays, 10:00 AM to 12:00 PM"
+  - "Batch 2 — Thursdays, 1:40 PM to 3:40 PM"
+venue: "E233"
 
 evaluation:
   - key: "D-D"
@@ -70,9 +69,16 @@ articulation:
     - id: "CO-4"
       values: ["3","3","3","2","3","2","1","2","2","2","3","3","3","3"]
 
+# `role` renders under the name only when it is non-empty. Both names sit under
+# the "Instructors" heading, so neither needs a label.
 instructors:
+  - name: "Apparasu Adithya Kashyap"
+    role: ""
+    url: ""
+    email: ""
+    photo: ""
   - name: "Harshvardhan Uppaluru"
-    role: "Course instructor"
+    role: ""
     url: "https://uhvardhan.github.io"
     email: ""
     photo: ""

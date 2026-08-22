@@ -24,7 +24,7 @@ layout: default
 </section>
 
 <section class="section">
-  <h2 class="section__title">Where and when</h2>
+  <h2 class="section__title section__title--lead">Course Schedule</h2>
   <dl class="specs">
     <div class="specs__row">
       <dt>Sessions</dt>
@@ -40,7 +40,13 @@ layout: default
     </div>
     <div class="specs__row">
       <dt>Scheme</dt>
-      <dd>{{ c.teaching_scheme.lecture }} L · {{ c.teaching_scheme.practical }} P · {{ c.teaching_scheme.credits }} credit</dd>
+      <dd>
+        <ul class="bare">
+          <li>Lecture — {{ c.teaching_scheme.lecture }} hours per week</li>
+          <li>Practical — {{ c.teaching_scheme.practical }} hours per week</li>
+          <li>Credits — {{ c.teaching_scheme.credits }}</li>
+        </ul>
+      </dd>
     </div>
     <div class="specs__row">
       <dt>Prerequisite</dt>
@@ -50,7 +56,7 @@ layout: default
 </section>
 
 <section class="section">
-  <h2 class="section__title">Instructor</h2>
+  <h2 class="section__title section__title--lead">Instructors</h2>
   <ul class="people">
     {%- for p in c.instructors -%}
     <li class="person">
@@ -61,7 +67,7 @@ layout: default
         <p class="person__name">
           {%- if p.url and p.url != "" -%}<a href="{{ p.url }}">{{ p.name }}</a>{%- else -%}{{ p.name }}{%- endif -%}
         </p>
-        <p class="person__role">{{ p.role }}</p>
+        {%- if p.role and p.role != "" -%}<p class="person__role">{{ p.role }}</p>{%- endif -%}
         {%- if p.email and p.email != "" -%}
         <p class="person__role"><a href="mailto:{{ p.email }}">{{ p.email }}</a></p>
         {%- endif -%}
