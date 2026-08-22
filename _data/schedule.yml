@@ -47,33 +47,33 @@
   files: []
 - week: 10
   dates: ["September 7", "September 10"]
-  session: "Sessional Examination - I"
+  session: "Experiment 7: Volumetric Depth Interpretation"
   files: []
 - week: 11
   dates: ["September 14", "September 17"]
-  session: ""
+  session: "Experiment 8: Planar Environment Mapping"
   files: []
 - week: 12
   dates: ["September 21", "September 24"]
-  session: ""
+  session: "Experiment 9: DC Motor Characterization"
   files: []
 - week: 13
   dates: ["September 28", "October 1"]
-  session: ""
+  session: "Experiment 10: Stepper Motor Precision & Resonance"
   files: []
 - week: 14
   dates: ["October 5", "October 8"]
-  session: ""
+  session: "Experiment 11: Brushless DC (BLDC) Speed Control"
   files: []
 - week: 15
   dates: ["October 12", "October 15"]
-  session: ""
+  session: "Experiment 12: Integrated Visual Servoing"
   files: []
 - week: 16
   dates: ["October 19", "October 22"]
-  session: ""
+  session: "Potential holiday week"
   files: []
 - week: 17
   dates: ["October 26", "October 29"]
-  session: ""
+  session: "Buffer week"
   files: []
