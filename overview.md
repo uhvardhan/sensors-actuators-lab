@@ -28,32 +28,6 @@ On completion of this laboratory, a student will be able to:
 </table>
 </div>
 
-## Articulation Matrix
-
-Correlation of course outcomes with programme outcomes and programme specific outcomes.
-Mapping levels: **1** slight, **2** moderate, **3** substantial.
-
-<div class="table-scroll matrix" markdown="0">
-<table>
-  <thead>
-    <tr>
-      <th>CO</th>
-      {% for col in c.articulation.columns %}<th>{{ col }}</th>{% endfor %}
-    </tr>
-  </thead>
-  <tbody>
-  {% for row in c.articulation.rows %}
-    <tr>
-      <td class="t-mono">{{ row.id }}</td>
-      {% for v in row.values %}
-        {% if v == "" %}<td class="empty">·</td>{% else %}<td>{{ v }}</td>{% endif %}
-      {% endfor %}
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
-</div>
-
 ## Assessment
 
 <div class="table-scroll" markdown="0">
