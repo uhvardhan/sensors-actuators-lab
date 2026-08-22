@@ -1,14 +1,6 @@
 # Newest first. `date` is free text — it is printed exactly as written.
-# Delete these two samples once the semester starts.
 
-- date: "TBA"
+- date: "August 23"
   body: >-
-    Cycle II (Actuators & Control) begins next week. Bring your lab record up to
-    date — Experiments 1–8 must be signed off before the Cycle I internal.
-
-- date: "TBA"
-  body: >-
-    Welcome to **Sensors and Actuators Laboratory (25PC2RA202)**. The full list of
-    twelve experiments is on the [Experiments](/experiments/) page, and the
-    week-by-week plan is on the [Schedule](/schedule/) page. Install the Python
-    toolchain listed under [Resources](/resources/) before the first session.
+    Welcome to Sensors and Actuators Laboratory (25PC2RA202). The course website
+    is now live.

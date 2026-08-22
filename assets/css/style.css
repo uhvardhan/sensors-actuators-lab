@@ -270,6 +270,7 @@ h3 { font-size: 1.05rem; margin: 1.9rem 0 .6rem; }
 /* ── Sections ─────────────────────────────────────────────────────────────── */
 
 .section { margin-top: 3rem; }
+.section:first-child { margin-top: 0; }
 
 .section__title {
   font-family: var(--font-mono);
