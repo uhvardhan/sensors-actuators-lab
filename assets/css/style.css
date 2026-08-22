@@ -83,7 +83,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 }
 
 .masthead__mark { flex: 0 0 auto; display: block; }
-.masthead__mark img { display: block; width: 52px; height: 52px; }
+.masthead__mark img { display: block; width: 60px; height: auto; }
 
 .masthead__text { min-width: 0; }
 
@@ -561,7 +561,7 @@ tbody tr:hover td { background: rgba(22, 35, 42, .022); }
 @media (max-width: 640px) {
   .wrap { padding-inline: 1.15rem; }
   .masthead__inner { gap: .85rem; }
-  .masthead__mark img { width: 42px; height: 42px; }
+  .masthead__mark img { width: 50px; height: auto; }
   .update { grid-template-columns: 1fr; gap: .3rem; }
   .specs__row { grid-template-columns: 1fr; gap: .15rem; }
   .footer__inner { grid-template-columns: 1fr; gap: 1.5rem; }

@@ -1,6 +1,6 @@
 # ─── Site identity ────────────────────────────────────────────────────────────
 title: "Sensors and Actuators Laboratory"
-tagline: "III Semester 2026–27"
+tagline: "Fall 2026 (July – November)"
 description: >-
   Course website for Sensors and Actuators Laboratory (25PC2RA202),
   B.Tech. CSE (Robotics & Artificial Intelligence), VNR VJIET.
@@ -14,8 +14,8 @@ institute:
   name: "VNR Vignana Jyothi Institute of Engineering and Technology"
   short: "VNR VJIET"
   url: "https://www.vnrvjiet.ac.in"
-  # Replace with the real institute logo, e.g. /assets/images/vnrvjiet.png
-  logo: "/assets/images/logo-placeholder.svg"
+  # Official VNR VJIET emblem (vector). Natural aspect ratio is 120:81.
+  logo: "/assets/images/vnrvjiet-logo.svg"
   department: "Department of Computer Science and Engineering (Robotics & Artificial Intelligence)"
   address: "Bachupally, Hyderabad, Telangana — 500090"
 
