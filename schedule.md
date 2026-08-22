@@ -24,7 +24,10 @@ hide_title: true
           <ul class="bare">{% for d in w.dates %}<li>{{ d }}</li>{% endfor %}</ul>
         {%- else -%}—{%- endif -%}
       </td>
-      <td class="t-title">{{ w.session }}</td>
+      <td class="t-title">
+        {%- if w.session and w.session != "" -%}{{ w.session }}
+        {%- else -%}<span class="t-mono">—</span>{%- endif -%}
+      </td>
       <td>
         {%- if w.files and w.files.size > 0 -%}
           <ul class="bare">{% for f in w.files %}<li><a href="{{ f.url | relative_url }}">{{ f.name }}</a></li>{% endfor %}</ul>

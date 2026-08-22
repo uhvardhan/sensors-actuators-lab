@@ -1,106 +1,95 @@
 # One entry per week of the semester.
 #
-#   dates  — list, printed one per line. Leave [] and the site prints an em dash.
-#   files  — list of {name, url}, printed one per line. Leave [] for an em dash.
-#            url starting with "/" is resolved against the site, e.g.
-#              files:
-#                - name: "Experiment sheet (PDF)"
-#                  url: "/assets/files/exp-01-sheet.pdf"
-#            An external link (https://…) is used as written.
+#   dates    — list, printed one per line. Leave [] and the site prints an em dash.
+#   session  — the Experiment column. Leave "" for an em dash.
+#   files    — list of {name, url}, printed one per line. Leave [] for an em dash.
+#              url starting with "/" is resolved against the site, e.g.
+#                files:
+#                  - name: "Experiment sheet (PDF)"
+#                    url: "/assets/files/exp-01-sheet.pdf"
+#              An external link (https://…) is used as written.
 
 - week: 1
   dates: ["July 6", "July 9"]
   session: "Lab orientation, safety briefing, toolchain setup"
   files: []
-  exp: ""
-  cycle: ""
 - week: 2
   dates: ["July 13", "July 16"]
   session: "Odometry and Kinematics"
   files: []
-  exp: 1
-  cycle: sense
 - week: 3
   dates: ["July 20", "July 23"]
   session: "Inertial Data Analysis"
   files: []
-  exp: 2
-  cycle: sense
 - week: 4
   dates: ["July 27", "July 30"]
   session: "Ranging and Error Characterization"
   files: []
-  exp: 3
-  cycle: sense
 - week: 5
   dates: ["August 3", "August 6"]
   session: "Shutter and Motion Artifacts"
   files: []
-  exp: 4
-  cycle: sense
 - week: 6
   dates: ["August 10", "August 13"]
   session: "Geometric Camera Calibration"
   files: []
-  exp: 5
-  cycle: sense
 - week: 7
   dates: ["August 17", "August 20"]
   session: "Object Detection and Tracking"
   files: []
-  exp: 6
-  cycle: sense
 - week: 8
   dates: ["August 24", "August 27"]
   session: "Volumetric Depth Interpretation"
   files: []
-  exp: 7
-  cycle: sense
 - week: 9
-  dates: []
+  dates: ["August 31", "September 3"]
   session: "Planar Environment Mapping"
   files: []
-  exp: 8
-  cycle: sense
 - week: 10
-  dates: []
+  dates: ["September 7", "September 10"]
   session: "Cycle I review · Lab internal I"
   files: []
-  exp: ""
-  cycle: ""
 - week: 11
-  dates: []
+  dates: ["September 14", "September 17"]
   session: "DC Motor Characterization"
   files: []
-  exp: 9
-  cycle: act
 - week: 12
-  dates: []
+  dates: ["September 21", "September 24"]
   session: "Stepper Motor Precision & Resonance"
   files: []
-  exp: 10
-  cycle: act
 - week: 13
-  dates: []
+  dates: ["September 28", "October 1"]
   session: "Brushless DC (BLDC) Speed Control"
   files: []
-  exp: 11
-  cycle: act
 - week: 14
-  dates: []
+  dates: ["October 5", "October 8"]
   session: "Integrated Visual Servoing"
   files: []
-  exp: 12
-  cycle: act
 - week: 15
-  dates: []
+  dates: ["October 12", "October 15"]
   session: "Lab internal II · record submission"
   files: []
-  exp: ""
-  cycle: ""
 - week: 16
-  dates: []
+  dates: ["October 19", "October 22"]
   session: "Semester end examination (practical)"
   files: []
-  exp: ""
-  cycle: ""
+- week: 17
+  dates: ["October 26", "October 29"]
+  session: ""
+  files: []
+- week: 18
+  dates: ["November 2", "November 5"]
+  session: ""
+  files: []
+- week: 19
+  dates: ["November 9", "November 12"]
+  session: ""
+  files: []
+- week: 20
+  dates: ["November 16", "November 19"]
+  session: ""
+  files: []
+- week: 21
+  dates: ["November 23", "November 26"]
+  session: ""
+  files: []
