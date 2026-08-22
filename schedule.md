@@ -3,7 +3,7 @@ layout: page
 title: Schedule
 permalink: /schedule/
 eyebrow: Semester plan
-lede: One experiment per session across sixteen weeks, with cycle reviews and internals in between. Dates are confirmed against the academic calendar as the semester progresses.
+hide_title: true
 ---
 
 <div class="table-scroll" markdown="0">

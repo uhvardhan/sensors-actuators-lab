@@ -206,6 +206,11 @@ h3 { font-size: 1.05rem; margin: 1.9rem 0 .6rem; }
 
 .page-head { padding-bottom: 1.5rem; border-bottom: 1px solid var(--rule); margin-bottom: 2rem; }
 
+/* Eyebrow only, no heading under it — the spacing below was sized for a
+   heading and a lede that are no longer there. */
+.page-head--label { padding-bottom: .55rem; margin-bottom: 1.6rem; }
+.page-head--label .eyebrow { margin-bottom: 0; }
+
 /* ── Hero ─────────────────────────────────────────────────────────────────── */
 
 .hero { padding-bottom: 2.25rem; }
@@ -507,8 +512,6 @@ tbody tr:hover td { background: rgba(22, 35, 42, .022); }
   padding-top: .2rem;
 }
 .specs dd { margin: 0; color: var(--ink-2); }
-
-.page-head--exp { border-bottom: 0; padding-bottom: .5rem; }
 
 .files { list-style: none; padding: 0; }
 .files li { border-bottom: 1px solid var(--rule-soft); padding-block: .55rem; }
