@@ -2,33 +2,18 @@
 layout: page
 title: Overview
 permalink: /overview/
-eyebrow: Syllabus
-lede: Course objectives, outcomes, articulation matrix and assessment breakdown, as approved under the R25 regulation.
+hide_title: true
 ---
 
 {% assign c = site.data.course %}
 
-## Course at a glance
-
-<div class="table-scroll" markdown="0">
-<table>
-  <tbody>
-    <tr><th>Course code</th><td class="t-mono">{{ c.code }}</td></tr>
-    <tr><th>Programme</th><td>{{ c.programme }}</td></tr>
-    <tr><th>Semester</th><td>{{ c.semester }} · {{ c.regulation }} regulation</td></tr>
-    <tr><th>L · T/P · C</th><td class="t-mono">{{ c.teaching_scheme.lecture }} · {{ c.teaching_scheme.practical }} · {{ c.teaching_scheme.credits }}</td></tr>
-    <tr><th>Prerequisite</th><td>{{ c.prerequisites }}</td></tr>
-  </tbody>
-</table>
-</div>
-
-## Course objectives
+## Course Objectives
 
 <ul>
 {% for o in c.objectives %}<li>{{ o }}</li>{% endfor %}
 </ul>
 
-## Course outcomes
+## Course Outcomes
 
 On completion of this laboratory, a student will be able to:
 
@@ -43,7 +28,7 @@ On completion of this laboratory, a student will be able to:
 </table>
 </div>
 
-## Articulation matrix
+## Articulation Matrix
 
 Correlation of course outcomes with programme outcomes and programme specific outcomes.
 Mapping levels: **1** slight, **2** moderate, **3** substantial.
@@ -84,23 +69,3 @@ Mapping levels: **1** slight, **2** moderate, **3** substantial.
   </tbody>
 </table>
 </div>
-
-<div class="note" markdown="1">
-**Lab record.** Each experiment needs a written record — aim, setup, observations, plots,
-and a short interpretation of what the data says. Records are signed off session by session;
-a record submitted in bulk at the end of the semester is not accepted for day-to-day marks.
-</div>
-
-## How the two cycles fit together
-
-Cycle I is measurement. Every experiment in it ends with the same question: how wrong is
-this reading, and in which direction? Encoder quantisation, IMU bias and random walk,
-ultrasonic beam spread, rolling shutter skew, lens distortion, stereo disparity error,
-LiDAR angular resolution — each has a characteristic failure mode, and knowing it is what
-separates a usable estimate from a plausible-looking one.
-
-Cycle II is command. Motors have their own non-idealities — back-EMF, missed steps,
-commutation ripple, backlash in the gear train — and a control loop written without
-accounting for them behaves well on paper and badly on a bench. Experiment 12 puts a Cycle I
-sensor in the feedback path of a Cycle II actuator, which is the smallest complete robot
-you can build.
