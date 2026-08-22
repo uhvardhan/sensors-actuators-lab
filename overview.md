@@ -9,9 +9,9 @@ hide_title: true
 
 ## Course Objectives
 
-<ul>
+<ol>
 {% for o in c.objectives %}<li>{{ o }}</li>{% endfor %}
-</ul>
+</ol>
 
 ## Course Outcomes
 
@@ -22,7 +22,7 @@ On completion of this laboratory, a student will be able to:
   <thead><tr><th class="t-num">CO</th><th>Outcome</th></tr></thead>
   <tbody>
   {% for co in c.outcomes %}
-    <tr><td class="t-mono">{{ co.id }}</td><td>{{ co.text }}</td></tr>
+    <tr><td class="t-mono">{{ forloop.index }}</td><td>{{ co.text }}</td></tr>
   {% endfor %}
   </tbody>
 </table>
