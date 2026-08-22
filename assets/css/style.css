@@ -388,6 +388,13 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
 
 .bare { list-style: none; margin: 0; padding: 0; }
 
+/* .prose ul outranks .bare on specificity, so a bare list inside prose — the
+   stacked dates and files in the schedule table — inherits its bottom margin
+   and pads every row out. Win it back. */
+.prose ul.bare { margin: 0; padding: 0; }
+.prose ul.bare li { margin-bottom: .25rem; }
+.prose ul.bare li:last-child { margin-bottom: 0; }
+
 /* ── Tables ───────────────────────────────────────────────────────────────── */
 
 .table-scroll { overflow-x: auto; margin: 0 0 1.5rem; }
