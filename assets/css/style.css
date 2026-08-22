@@ -17,6 +17,9 @@
   --act:        #a8601a;
   --act-tint:   #f7ece0;
 
+  --notice:      var(--act-tint);
+  --notice-rule: #e6d0b7;
+
   --wrap:       960px;
   --font-body:  "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-disp:  "IBM Plex Sans Condensed", "IBM Plex Sans", system-ui, sans-serif;
@@ -271,6 +274,18 @@ h3 { font-size: 1.05rem; margin: 1.9rem 0 .6rem; }
 
 .section { margin-top: 3rem; }
 .section:first-child { margin-top: 0; }
+
+/* Highlighted section — used for Updates so notices read as a notice. */
+.section--notice {
+  background: var(--notice);
+  border: 1px solid var(--notice-rule);
+  border-radius: 4px;
+  padding: 1.5rem 1.6rem;
+}
+.section--notice .section__title { color: var(--ink-2); border-bottom-color: var(--notice-rule); }
+.section--notice .update { border-bottom-color: var(--notice-rule); }
+.section--notice .update:last-child { padding-bottom: 0; }
+.section--notice .update__body { color: var(--ink); }
 
 .section__title {
   font-family: var(--font-mono);
