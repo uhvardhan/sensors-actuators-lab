@@ -11,67 +11,67 @@
 
 - week: 1
   dates: ["July 6", "July 9"]
-  session: "Lab orientation, safety briefing, toolchain setup"
+  session: "Introduction"
   files: []
 - week: 2
   dates: ["July 13", "July 16"]
-  session: "Odometry and Kinematics"
+  session: "Experiment 1: Odometry and Kinematics"
   files: []
 - week: 3
   dates: ["July 20", "July 23"]
-  session: "Inertial Data Analysis"
+  session: "Experiment 2: Inertial Data Analysis"
   files: []
 - week: 4
   dates: ["July 27", "July 30"]
-  session: "Ranging and Error Characterization"
+  session: "Experiment 3: Ranging and Error Characterization"
   files: []
 - week: 5
   dates: ["August 3", "August 6"]
-  session: "Shutter and Motion Artifacts"
+  session: "Experiment 4: Shutter and Motion Artifacts"
   files: []
 - week: 6
   dates: ["August 10", "August 13"]
-  session: "Geometric Camera Calibration"
+  session: "Experiment 4: Shutter and Motion Artifacts"
   files: []
 - week: 7
   dates: ["August 17", "August 20"]
-  session: "Object Detection and Tracking"
+  session: "Experiment 5: Geometric Camera Calibration"
   files: []
 - week: 8
   dates: ["August 24", "August 27"]
-  session: "Volumetric Depth Interpretation"
+  session: "Experiment 6: Object Detection and Tracking"
   files: []
 - week: 9
   dates: ["August 31", "September 3"]
-  session: "Planar Environment Mapping"
+  session: "Sessional Examination - I"
   files: []
 - week: 10
   dates: ["September 7", "September 10"]
-  session: "Cycle I review · Lab internal I"
+  session: "Sessional Examination - II"
   files: []
 - week: 11
   dates: ["September 14", "September 17"]
-  session: "DC Motor Characterization"
+  session: ""
   files: []
 - week: 12
   dates: ["September 21", "September 24"]
-  session: "Stepper Motor Precision & Resonance"
+  session: ""
   files: []
 - week: 13
   dates: ["September 28", "October 1"]
-  session: "Brushless DC (BLDC) Speed Control"
+  session: ""
   files: []
 - week: 14
   dates: ["October 5", "October 8"]
-  session: "Integrated Visual Servoing"
+  session: ""
   files: []
 - week: 15
   dates: ["October 12", "October 15"]
-  session: "Lab internal II · record submission"
+  session: ""
   files: []
 - week: 16
   dates: ["October 19", "October 22"]
-  session: "Semester end examination (practical)"
+  session: ""
   files: []
 - week: 17
   dates: ["October 26", "October 29"]
