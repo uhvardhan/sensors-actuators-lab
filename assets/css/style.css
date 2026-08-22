@@ -429,7 +429,7 @@ td:last-child, th:last-child { padding-right: 0; }
 tbody tr:hover td { background: rgba(22, 35, 42, .022); }
 
 .t-num { width: 3.5rem; }
-.t-title { color: var(--ink); font-weight: 500; }
+.t-title { color: var(--ink); font-weight: 400; }
 .t-mono { font-family: var(--font-mono); font-size: .82rem; color: var(--ink-3); white-space: nowrap; }
 .t-center { text-align: center; }
 
