@@ -17,10 +17,16 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
 
-<link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+{%- comment -%}
+  ?v= is the build timestamp, so a deploy always serves fresh CSS and favicon
+  instead of whatever the visitor's browser cached from the previous build.
+{%- endcomment -%}
+{%- assign build = site.time | date: "%s" -%}
+
+<link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}?v={{ build }}" type="image/svg+xml">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ build }}">
