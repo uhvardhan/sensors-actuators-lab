@@ -56,6 +56,23 @@ layout: default
 </section>
 
 <section class="section">
+  <h2 class="section__title section__title--lead">Assessment</h2>
+  <div class="table-scroll">
+    <table>
+      <thead><tr><th class="t-num">Code</th><th>Component</th><th class="t-center">Marks</th></tr></thead>
+      <tbody>
+      {%- assign total = 0 -%}
+      {%- for e in c.evaluation -%}
+        {%- assign total = total | plus: e.marks -%}
+        <tr><td class="t-mono">{{ e.key }}</td><td>{{ e.label }}</td><td class="t-center t-mono">{{ e.marks }}</td></tr>
+      {%- endfor -%}
+        <tr><td></td><td class="t-title">Total</td><td class="t-center t-mono">{{ total }}</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section">
   <h2 class="section__title section__title--lead">Instructors</h2>
   <ul class="people">
     {%- for p in c.instructors -%}
