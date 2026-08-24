@@ -3,7 +3,14 @@ layout: page
 title: Schedule
 permalink: /schedule/
 hide_title: true
+wide: true
 ---
+
+{%- comment -%}
+  Notes / Scripts / Additional resources all render the same way, so they loop
+  over the matching list in _data/schedule.yml rather than repeating the markup.
+{%- endcomment -%}
+{%- assign link_cols = "notes,scripts,resources" | split: "," -%}
 
 <div class="table-scroll" markdown="0">
 <table>
@@ -12,7 +19,9 @@ hide_title: true
       <th class="t-num">Week</th>
       <th>Date</th>
       <th>Experiment</th>
-      <th>Files</th>
+      <th>Notes</th>
+      <th>Scripts</th>
+      <th>Additional resources</th>
     </tr>
   </thead>
   <tbody>
@@ -28,11 +37,14 @@ hide_title: true
         {%- if w.session and w.session != "" -%}{{ w.session }}
         {%- else -%}<span class="t-mono">—</span>{%- endif -%}
       </td>
+      {%- for key in link_cols -%}
+      {%- assign items = w[key] -%}
       <td>
-        {%- if w.files and w.files.size > 0 -%}
-          <ul class="bare">{% for f in w.files %}<li><a href="{{ f.url | relative_url }}">{{ f.name }}</a></li>{% endfor %}</ul>
+        {%- if items and items.size > 0 -%}
+          <ul class="bare">{% for f in items %}<li><a href="{{ f.url | relative_url }}">{{ f.name }}</a></li>{% endfor %}</ul>
         {%- else -%}<span class="t-mono">—</span>{%- endif -%}
       </td>
+      {%- endfor -%}
     </tr>
   {% endfor %}
   </tbody>

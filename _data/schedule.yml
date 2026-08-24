@@ -1,79 +1,119 @@
 # One entry per week of the semester.
 #
-#   dates    — list, printed one per line. Leave [] and the site prints an em dash.
-#   session  — the Experiment column. Leave "" for an em dash.
-#   files    — list of {name, url}, printed one per line. Leave [] for an em dash.
-#              url starting with "/" is resolved against the site, e.g.
-#                files:
-#                  - name: "Experiment sheet (PDF)"
-#                    url: "/assets/files/exp-01-sheet.pdf"
-#              An external link (https://…) is used as written.
+#   dates      — list, printed one per line. Leave [] and the site prints an em dash.
+#   session    — the Experiment column. Leave "" for an em dash.
+#   notes      — the Notes column.
+#   scripts    — the Scripts column.
+#   resources  — the Additional resources column.
+#
+# The three link columns are each a list of {name, url}, printed one per line;
+# [] prints an em dash. A url starting with "/" resolves against the site:
+#
+#   notes:
+#     - name: "Experiment sheet (PDF)"
+#       url: "/assets/files/exp-01-sheet.pdf"
+#
+# An external link (https://…) is used as written.
 
 - week: 1
   dates: ["July 6", "July 9"]
   session: "Introduction"
-  files: []
+  notes: []
+  scripts: []
+  resources: []
 - week: 2
   dates: ["July 13", "July 16"]
   session: "Experiment 1: Odometry and Kinematics"
-  files: []
+  notes: []
+  scripts: []
+  resources: []
 - week: 3
   dates: ["July 20", "July 23"]
   session: "Experiment 2: Inertial Data Analysis"
-  files: []
+  notes: []
+  scripts: []
+  resources: []
 - week: 4
   dates: ["July 27", "July 30"]
   session: "Experiment 3: Ranging and Error Characterization"
-  files: []
+  notes: []
+  scripts: []
+  resources: []
 - week: 5
   dates: ["August 3", "August 6"]
   session: "Experiment 4: Shutter and Motion Artifacts"
-  files: []
+  notes: []
+  scripts: []
+  resources: []
 - week: 6
   dates: ["August 10", "August 13"]
   session: "Experiment 4: Shutter and Motion Artifacts"
-  files: []
+  notes: []
+  scripts: []
+  resources: []
 - week: 7
   dates: ["August 17", "August 20"]
   session: "Experiment 5: Geometric Camera Calibration"
-  files: []
+  notes: []
+  scripts: []
+  resources: []
 - week: 8
   dates: ["August 24", "August 27"]
   session: "Experiment 6: Object Detection and Tracking"
-  files: []
+  notes: []
+  scripts: []
+  resources: []
 - week: 9
   dates: ["August 31", "September 3"]
   session: "Sessional Examination - I"
-  files: []
+  notes: []
+  scripts: []
+  resources: []
 - week: 10
   dates: ["September 7", "September 10"]
   session: "Experiment 7: Volumetric Depth Interpretation"
-  files: []
+  notes: []
+  scripts: []
+  resources: []
 - week: 11
   dates: ["September 14", "September 17"]
   session: "Experiment 8: Planar Environment Mapping"
-  files: []
+  notes: []
+  scripts: []
+  resources: []
 - week: 12
   dates: ["September 21", "September 24"]
   session: "Experiment 9: DC Motor Characterization"
-  files: []
+  notes: []
+  scripts: []
+  resources: []
 - week: 13
   dates: ["September 28", "October 1"]
   session: "Experiment 10: Stepper Motor Precision & Resonance"
-  files: []
+  notes: []
+  scripts: []
+  resources: []
 - week: 14
   dates: ["October 5", "October 8"]
   session: "Experiment 11: Brushless DC (BLDC) Speed Control"
-  files: []
+  notes: []
+  scripts: []
+  resources: []
 - week: 15
   dates: ["October 12", "October 15"]
   session: "Experiment 12: Integrated Visual Servoing"
-  files: []
+  notes: []
+  scripts: []
+  resources: []
 - week: 16
   dates: ["October 19", "October 22"]
   session: "Potential holiday week"
-  files: []
+  notes: []
+  scripts: []
+  resources: []
 - week: 17
   dates: ["October 26", "October 29"]
   session: "Buffer week"
-  files: []
+  notes: []
+  scripts: []
+  resources: []

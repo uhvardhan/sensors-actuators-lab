@@ -174,6 +174,11 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 .main { padding-block: 2.75rem 4.5rem; }
 
+/* Pages with wide: true run past the wrap. Must follow .wrap — equal
+   specificity, so source order is what lets it win. The masthead, nav and
+   footer stay at the wrap, so a wide page overhangs them by design. */
+.main--wide { max-width: 1200px; }
+
 h1, h2, h3, h4 {
   font-family: var(--font-disp);
   font-weight: 600;
