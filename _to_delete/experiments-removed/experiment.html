@@ -1,0 +1,84 @@
+---
+layout: default
+---
+{%- assign exps = site.experiments | sort: "number" -%}
+
+<p class="crumb"><a href="{{ '/experiments/' | relative_url }}">← All experiments</a></p>
+
+<div class="page-head page-head--exp">
+  <div class="exp-head">
+    <span class="chip chip--{{ page.cycle_id }} chip--lg">{{ page.number | prepend: '0' | slice: -2, 2 }}</span>
+    <div>
+      <p class="eyebrow eyebrow--{{ page.cycle_id }}">{{ page.cycle }}</p>
+      <h1>{{ page.title }}</h1>
+    </div>
+  </div>
+
+  <dl class="specs">
+    <div class="specs__row">
+      <dt>Aim</dt>
+      <dd>{{ page.aim }}</dd>
+    </div>
+    <div class="specs__row">
+      <dt>Maps to</dt>
+      <dd>{% for c in page.co %}<span class="tag">{{ c }}</span>{% endfor %}</dd>
+    </div>
+    <div class="specs__row">
+      <dt>Topics</dt>
+      <dd>{{ page.topics }}</dd>
+    </div>
+    <div class="specs__row">
+      <dt>Status</dt>
+      <dd>
+        {%- if page.status == "released" -%}
+          <span class="status status--live">Released</span>
+        {%- else -%}
+          <span class="status">Sheet not yet released</span>
+        {%- endif -%}
+      </dd>
+    </div>
+  </dl>
+</div>
+
+<div class="prose">
+  {{ content }}
+
+  {%- if page.resources and page.resources.size > 0 -%}
+  <h2>Files</h2>
+  <ul class="files">
+    {%- for r in page.resources -%}
+      <li><a href="{{ r.url | relative_url }}">{{ r.name }}</a></li>
+    {%- endfor -%}
+  </ul>
+  {%- endif -%}
+</div>
+
+<nav class="pager" aria-label="Experiment navigation">
+  {%- assign idx = 0 -%}
+  {%- for e in exps -%}
+    {%- if e.url == page.url -%}
+      {%- assign idx = forloop.index0 -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign prev_idx = idx | minus: 1 -%}
+  {%- assign next_idx = idx | plus: 1 -%}
+
+  <div class="pager__side">
+    {%- if idx > 0 -%}
+      {%- assign p = exps[prev_idx] -%}
+      <a href="{{ p.url | relative_url }}">
+        <span class="pager__label">Previous</span>
+        <span class="pager__title">{{ p.number }}. {{ p.title }}</span>
+      </a>
+    {%- endif -%}
+  </div>
+  <div class="pager__side pager__side--right">
+    {%- if next_idx < exps.size -%}
+      {%- assign n = exps[next_idx] -%}
+      <a href="{{ n.url | relative_url }}">
+        <span class="pager__label">Next</span>
+        <span class="pager__title">{{ n.number }}. {{ n.title }}</span>
+      </a>
+    {%- endif -%}
+  </div>
+</nav>
