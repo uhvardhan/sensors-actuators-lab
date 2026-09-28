@@ -59,7 +59,7 @@
   resources: []
 - week: 8
   dates: ["August 24", "August 27"]
-  session: "Experiment 6: Object Detection and Tracking"
+  session: "Buffer week"
   notes: []
   scripts: []
   resources: []
@@ -71,49 +71,49 @@
   resources: []
 - week: 10
   dates: ["September 7", "September 10"]
-  session: "Experiment 7: Volumetric Depth Interpretation"
+  session: "Sessional Examination-I (SE-I)<br>Batch 2 - Volumetric Depth Interpretation"
   notes: []
   scripts: []
   resources: []
 - week: 11
   dates: ["September 14", "September 17"]
-  session: "Experiment 8: Planar Environment Mapping"
+  session: "Holiday (Ganesh Chaturthi)<br>Volumetric Depth Interpretation"
   notes: []
   scripts: []
   resources: []
 - week: 12
   dates: ["September 21", "September 24"]
-  session: "Experiment 9: DC Motor Characterization"
+  session: "Experiment 11: Batch 1 - Brushless DC (BLDC) Speed Control<br>WebForge AI Hackathon"
   notes: []
   scripts: []
   resources: []
 - week: 13
   dates: ["September 28", "October 1"]
-  session: "Experiment 10: Stepper Motor Precision & Resonance"
+  session: "Experiment 9: DC Motor Characterization"
   notes: []
   scripts: []
   resources: []
 - week: 14
   dates: ["October 5", "October 8"]
-  session: "Experiment 11: Brushless DC (BLDC) Speed Control"
+  session: "Experiment 10: Stepper Motor Precision & Resonance"
   notes: []
   scripts: []
   resources: []
 - week: 15
   dates: ["October 12", "October 15"]
-  session: "Experiment 12: Integrated Visual Servoing"
+  session: "Batch 1 - Practical Exam<br>Batch 2 - Brushless DC (BLDC) Speed Control"
   notes: []
   scripts: []
   resources: []
 - week: 16
   dates: ["October 19", "October 22"]
-  session: "Potential holiday week"
+  session: "Holiday<br>Batch 2 - Practical Exam"
   notes: []
   scripts: []
   resources: []
 - week: 17
   dates: ["October 26", "October 29"]
-  session: "Buffer week"
+  session: "Experiment 12: Integrated Visual Servoing"
   notes: []
   scripts: []
   resources: []
