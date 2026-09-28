@@ -24,5 +24,5 @@ EOF
 
 sudo apparmor_parser -r /etc/apparmor.d/arduino-ide
 
-echo "Done. Run: ~/Application/arduino-ide_2.3.10_Linux_64bit.AppImage"
+echo "Done. Run: ~/Applications/arduino-ide_2.3.10_Linux_64bit.AppImage"
 
