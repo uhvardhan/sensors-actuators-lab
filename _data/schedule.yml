@@ -30,6 +30,8 @@
       url: "/assets/files/fix-arduino.sh"
     - name: "Arduino Code"
       url: "/assets/files/experiment_1.ino"
+    - name: "Instructions"
+      url: "/assets/files/Experiment%201%20-%20Odometry%20and%20Kinematics.pdf"
   resources: []
 - week: 3
   dates: ["July 20", "July 23"]
