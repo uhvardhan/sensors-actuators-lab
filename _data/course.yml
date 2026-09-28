@@ -23,7 +23,7 @@ venue: "E233"
 
 evaluation:
   - key: "D-D"
-    label: "Day-to-day evaluation"
+    label: "Day-to-Day Evaluation"
     marks: 10
   - key: "PE"
     label: "Internal Practical Exam"
