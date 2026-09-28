@@ -25,7 +25,9 @@
   dates: ["July 13", "July 16"]
   session: "Experiment 1: Odometry and Kinematics"
   notes: []
-  scripts: []
+  scripts:
+    - name: "Arduino Code"
+      url: "/assets/files/experiment_1.ino"
   resources: []
 - week: 3
   dates: ["July 20", "July 23"]
