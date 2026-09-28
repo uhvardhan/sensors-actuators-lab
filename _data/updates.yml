@@ -1,5 +1,19 @@
 # Newest first. `date` is free text — it is printed exactly as written.
 
+- date: "September 28"
+  body: |-
+    Internal Practical Examination will be conducted on the following dates:\\
+    Batch 1 - October 12\\
+    Batch 2 - October 22.
+
+    The exam will be based on the following experiments:\\
+    Experiment 1: Odometry and Kinematics\\
+    Experiment 2: Inertial Data Analysis\\
+    Experiment 3: Ranging and Error Characterization\\
+    Experiment 9: DC Motor Characterization\\
+    Experiment 10: Stepper Motor Precision and Resonance\\
+    Experiment 11: Brushless DC Motor Speed Control
+
 - date: "August 23"
   body: >-
     Welcome to Sensors and Actuators Laboratory (25PC2RA202). The course website
