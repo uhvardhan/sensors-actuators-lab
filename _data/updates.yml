@@ -1,8 +1,12 @@
 # Newest first. `date` is free text — it is printed exactly as written.
+- date: "September 28"
+  body: |-
+  Experiment 6: Object Detection and Tracking and Experiment 8: Planar Environment Mapping will be Course-Based Projects (CBP). 
+  Additional details will be released by the end of this week.
 
 - date: "September 28"
   body: |-
-    Practical Examination (PE) will be conducted on the following dates:\\
+    Internal Practical Exam (PE) will be conducted on the following dates:\\
     Batch 1 - October 12\\
     Batch 2 - October 22
 
