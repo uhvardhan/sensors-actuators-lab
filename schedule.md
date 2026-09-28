@@ -50,3 +50,5 @@ wide: true
   </tbody>
 </table>
 </div>
+
+Experiment 6: Object Detection and Tracking and Experiment 8: Planar Environment Mapping have been converted into Course Based Projects. Additional details will be released soon.
