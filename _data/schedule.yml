@@ -26,6 +26,8 @@
   session: "Experiment 1: Odometry and Kinematics"
   notes: []
   scripts:
+    - name: "Install Arduino (Ubuntu ONLY)"
+      url: "/assets/files/fix-arduino.sh"
     - name: "Arduino Code"
       url: "/assets/files/experiment_1.ino"
   resources: []
