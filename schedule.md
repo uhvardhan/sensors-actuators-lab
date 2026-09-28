@@ -7,10 +7,10 @@ wide: true
 ---
 
 {%- comment -%}
-  Notes / Scripts / Additional resources all render the same way, so they loop
-  over the matching list in _data/schedule.yml rather than repeating the markup.
+  Files (notes + scripts) and Additional resources render the same way, so they
+  loop over the matching lists in _data/schedule.yml rather than repeating the markup.
 {%- endcomment -%}
-{%- assign link_cols = "notes,scripts,resources" | split: "," -%}
+{%- assign link_cols = "notes+scripts,resources" | split: "," -%}
 
 <div class="table-scroll" markdown="0">
 <table>
@@ -19,8 +19,7 @@ wide: true
       <th class="t-num">Week</th>
       <th>Date</th>
       <th>Experiment</th>
-      <th>Notes</th>
-      <th>Scripts</th>
+      <th>Files</th>
       <th>Additional resources</th>
     </tr>
   </thead>
@@ -37,8 +36,10 @@ wide: true
         {%- if w.session and w.session != "" -%}{{ w.session }}
         {%- else -%}<span class="t-mono">—</span>{%- endif -%}
       </td>
-      {%- for key in link_cols -%}
-      {%- assign items = w[key] -%}
+      {%- for group in link_cols -%}
+      {%- assign keys = group | split: "+" -%}
+      {%- assign items = "" | split: "" -%}
+      {%- for key in keys -%}{%- if w[key] -%}{%- assign items = items | concat: w[key] -%}{%- endif -%}{%- endfor -%}
       <td>
         {%- if items and items.size > 0 -%}
           <ul class="bare">{% for f in items %}<li><a href="{{ f.url | relative_url }}">{{ f.name }}</a></li>{% endfor %}</ul>
