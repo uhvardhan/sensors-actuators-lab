@@ -2,11 +2,11 @@
 #
 #   dates      — list, printed one per line. Leave [] and the site prints an em dash.
 #   session    — the Experiment column. Leave "" for an em dash.
-#   notes      — the Notes column.
-#   scripts    — the Scripts column.
+#   notes      — the Files column (listed first).
+#   scripts    — the Files column (listed after notes).
 #   resources  — the Additional resources column.
 #
-# The three link columns are each a list of {name, url}, printed one per line;
+# notes, scripts and resources are each a list of {name, url}, printed one per line;
 # [] prints an em dash. A url starting with "/" resolves against the site:
 #
 #   notes:
