@@ -37,7 +37,9 @@
   dates: ["July 20", "July 23"]
   session: "Experiment 2: Inertial Data Analysis"
   notes: []
-  scripts: []
+  scripts:
+    - name: "Instructions"
+      url: "/assets/files/Experiment%202%20-%20Inertial%20Data%20Analysis.pdf"
   resources: []
 - week: 4
   dates: ["July 27", "July 30"]
