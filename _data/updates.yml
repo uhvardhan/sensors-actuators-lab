@@ -1,8 +1,10 @@
 # Newest first. `date` is free text — it is printed exactly as written.
+
 - date: "September 28"
-  body: |-
-  Experiment 6: Object Detection and Tracking and Experiment 8: Planar Environment Mapping will be Course-Based Projects (CBP). 
-  Additional details will be released by the end of this week.
+  body: >-
+    Experiment 6: Object Detection and Tracking and Experiment 8: Planar
+    Environment Mapping will be Course-Based Projects (CBP). Additional details
+    will be released by the end of this week.
 
 - date: "September 28"
   body: |-
