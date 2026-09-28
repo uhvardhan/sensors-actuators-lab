@@ -26,16 +26,16 @@ evaluation:
     label: "Day-to-day evaluation"
     marks: 10
   - key: "PE"
-    label: "Practical examination (internal)"
+    label: "Internal Practical Exam"
     marks: 10
   - key: "LR"
-    label: "Laboratory record"
+    label: "Laboratory Record"
     marks: 10
-  - key: "CP"
-    label: "Course project"
+  - key: "CBP"
+    label: "Course-Based Project"
     marks: 10
   - key: "SEE"
-    label: "Semester end examination"
+    label: "Semester End Examination"
     marks: 60
 
 prerequisites: "Basic Electrical and Electronics Engineering. Working knowledge of Python is assumed."
