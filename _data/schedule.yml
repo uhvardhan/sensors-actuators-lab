@@ -99,7 +99,11 @@
   dates: ["September 28", "October 1"]
   session: "Experiment 9: DC Motor Characterization"
   notes: []
-  scripts: []
+  scripts:
+    - name: "Arduino Code"
+      url: "/assets/files/experiment_9.ino"
+    - name: "Instructions"
+      url: "/assets/files/Experiment%209%20-%20DC%20Motor%20Characterization.pdf"
   resources: []
 - week: 14
   dates: ["October 5", "October 8"]
