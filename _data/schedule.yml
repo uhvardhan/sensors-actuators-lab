@@ -45,7 +45,9 @@
   dates: ["July 27", "July 30"]
   session: "Experiment 3: Ranging and Error Characterization"
   notes: []
-  scripts: []
+  scripts:
+    - name: "Arduino Code"
+      url: "/assets/files/experiment_3.ino"
   resources: []
 - week: 5
   dates: ["August 3", "August 6"]
