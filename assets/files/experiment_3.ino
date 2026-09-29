@@ -1,7 +1,6 @@
 // Distance Measurement 
 #define trigPin 9 
 #define echoPin 10 
-#define irPin A0 
 long duration; 
 float distanceUS; 
 
@@ -22,6 +21,6 @@ void loop()
   duration=pulseIn(echoPin,HIGH);
   distanceUS=duration*0.0343/2;
   Serial.print("Ultrasonic(cm): "); 
-  Serial.print(distanceUS); 
+  Serial.println(distanceUS); 
   delay(500); 
 }
