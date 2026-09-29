@@ -95,7 +95,9 @@
   dates: ["September 21", "September 24"]
   session: "Batch 1 - Experiment 11: Brushless DC (BLDC) Speed Control<br>WebForge AI Hackathon"
   notes: []
-  scripts: []
+  scripts:
+    - name: "Arduino Code"
+      url: "/assets/files/experiment_11.ino"
   resources: []
 - week: 13
   dates: ["September 28", "October 1"]
