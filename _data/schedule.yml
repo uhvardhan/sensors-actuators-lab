@@ -84,6 +84,8 @@
   scripts:
     - name: "Calibration Images"
       url: "/assets/files/Calibration_Imgs.zip"
+    - name: "Jupyter Notebook"
+      url: "/assets/files/experiment_5.ipynb"
   resources: []
 - week: 8
   dates: ["August 24", "August 27"]
@@ -101,13 +103,17 @@
   dates: ["September 7", "September 10"]
   session: "Sessional Examination - I (SE-I)<br>Batch 2 - Experiment 7: Volumetric Depth Interpretation"
   notes: []
-  scripts: []
+  scripts:
+    - name: "Jupyter Notebook"
+      url: "/assets/files/experiment_7.ipynb"
   resources: []
 - week: 11
   dates: ["September 14", "September 17"]
   session: "Holiday (Ganesh Chaturthi)<br>Batch 1 - Experiment 7: Volumetric Depth Interpretation"
   notes: []
-  scripts: []
+  scripts:
+    - name: "Jupyter Notebook"
+      url: "/assets/files/experiment_7.ipynb"
   resources: []
 - week: 12
   dates: ["September 21", "September 24"]
