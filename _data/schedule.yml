@@ -119,7 +119,9 @@
   dates: ["October 12", "October 15"]
   session: "Batch 1 - Internal Practical Exam (PE)<br>Batch 2 - Brushless DC (BLDC) Speed Control"
   notes: []
-  scripts: []
+  scripts:
+    - name: "Arduino Code"
+      url: "/assets/files/experiment_11.ino"
   resources: []
 - week: 16
   dates: ["October 19", "October 22"]
