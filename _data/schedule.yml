@@ -65,7 +65,9 @@
   dates: ["August 17", "August 20"]
   session: "Experiment 5: Geometric Camera Calibration"
   notes: []
-  scripts: []
+  scripts:
+    - name: "Calibration Images"
+      url: "/assets/files/Calibration_Imgs.zip"
   resources: []
 - week: 8
   dates: ["August 24", "August 27"]
