@@ -53,13 +53,29 @@
   dates: ["August 3", "August 6"]
   session: "Experiment 4: Shutter and Motion Artifacts"
   notes: []
-  scripts: []
+  scripts:
+    - name: "Python Code - Rolling Shutter Camera"
+      url: "/assets/files/rolling_shutter_capture.py"
+    - name: "Python Code - Global Shutter Camera"
+      url: "/assets/files/global_shutter_capture.py"
+    - name: "Theory"
+      url: "/assets/files/Experiment%204%20-%20Notes.pdf"
+    - name: "Instructions"
+      url: "/assets/files/Experiment%204%20-%20Shutter%20and%20Motion%20Artifacts.pdf"
   resources: []
 - week: 6
   dates: ["August 10", "August 13"]
   session: "Experiment 4: Shutter and Motion Artifacts"
   notes: []
-  scripts: []
+  scripts:
+    - name: "Python Code - Rolling Shutter Camera"
+      url: "/assets/files/rolling_shutter_capture.py"
+    - name: "Python Code - Global Shutter Camera"
+      url: "/assets/files/global_shutter_capture.py"
+    - name: "Theory"
+      url: "/assets/files/Experiment%204%20-%20Notes.pdf"
+    - name: "Instructions"
+      url: "/assets/files/Experiment%204%20-%20Shutter%20and%20Motion%20Artifacts.pdf"
   resources: []
 - week: 7
   dates: ["August 17", "August 20"]
