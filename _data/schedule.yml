@@ -128,6 +128,8 @@
   scripts:
     - name: "Arduino Code"
       url: "/assets/files/experiment_11.ino"
+    - name: "Instructions"
+      url: "/assets/files/Experiment%2011%20-%20BLDC%20Motor%20Speed%20Control.pdf"
   resources: []
 - week: 13
   dates: ["September 28", "October 1"]
@@ -152,6 +154,8 @@
   scripts:
     - name: "Arduino Code"
       url: "/assets/files/experiment_11.ino"
+    - name: "Instructions"
+      url: "/assets/files/Experiment%2011%20-%20BLDC%20Motor%20Speed%20Control.pdf"
   resources: []
 - week: 16
   dates: ["October 19", "October 22"]
