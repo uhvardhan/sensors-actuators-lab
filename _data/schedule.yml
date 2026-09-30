@@ -52,6 +52,8 @@
   scripts:
     - name: "Arduino Code"
       url: "/assets/files/experiment_3.ino"
+    - name: "Instructions"
+      url: "/assets/files/Experiment%203%20-%20Ranging%20and%20Error%20Characterization.pdf"
   resources: []
 - week: 5
   dates: ["August 3", "August 6"]
