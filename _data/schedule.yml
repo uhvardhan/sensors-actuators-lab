@@ -38,6 +38,8 @@
   session: "Experiment 2: Inertial Data Analysis"
   notes: []
   scripts:
+    - name: "Arduino Code"
+      url: "/assets/files/experiment_21.ino"
     - name: "Instructions"
       url: "/assets/files/Experiment%202%20-%20Inertial%20Data%20Analysis.pdf"
   resources: []
