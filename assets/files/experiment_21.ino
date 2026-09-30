@@ -19,7 +19,7 @@ const int N = 5000;// ~60 s of samples
 const char*  name[6]     = {"ax", "ay", "az", "gx", "gy", "gz"};
 const double expected[6] = {0, 0, 9.81, 0, 0, 0};      // True values (NO MOVEMENT OF THE SENSOR)
 
-double sum[6] = {0, 0, 0, 0, 0, 0}, 
+double sum[6] = {0, 0, 0, 0, 0, 0}; 
 double sumSq[6] = {0, 0, 0, 0, 0, 0};
 int n = 0;
 
