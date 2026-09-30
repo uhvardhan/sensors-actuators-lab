@@ -19,7 +19,9 @@
   dates: ["July 6", "July 9"]
   session: "Introduction"
   notes: []
-  scripts: []
+  scripts:
+    - name: "Introduction"
+      url: "/assets/files/Introduction%20%26%20Lab%20Protocols.pdf"
   resources: []
 - week: 2
   dates: ["July 13", "July 16"]
