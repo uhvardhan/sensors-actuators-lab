@@ -145,7 +145,13 @@
   dates: ["October 5", "October 8"]
   session: "Experiment 10: Stepper Motor Precision & Resonance"
   notes: []
-  scripts: []
+  scripts:
+    - name: "Arduino Code - 1"
+      url: "/assets/files/stepperA.ino"
+    - name: "Arduino Code - 2"
+      url: "/assets/files/stepperB.ino"
+    - name: "Instructions"
+      url: "/assets/files/Experiment%2010%20-%20Stepper%20Motor%20Control.pdf"
   resources: []
 - week: 15
   dates: ["October 12", "October 15"]
